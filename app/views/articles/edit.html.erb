@@ -1,0 +1,12 @@
+
+<%= form_for @article, url: article_path, method: :patch do |f| %>
+<div>
+  <%= f.label :title%>
+  <%= f.text_field :title %>
+</div>
+<div>
+  <%= f.label :text%>
+  <%= f.text_field :text%>
+</div>
+<%= f.submit %>
+<% end %>
